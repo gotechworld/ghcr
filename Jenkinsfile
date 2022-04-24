@@ -1,7 +1,7 @@
 pipeline {
   agent {label 'linux'}
   environment {
-    GITHUB_TOKEN=credentials('github')
+    GITHUB_TOKEN=credentials('jenkins-ghcr-token')
     IMAGE_NAME='petrugiurca/jenkins-ghcr'
     IMAGE_VERSION='8.5-204'
   }
